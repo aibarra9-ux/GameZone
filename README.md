@@ -1,2 +1,2 @@
 # GameZone
-Este es un repositorio en dodne estare creando y desarrollando una pagina web referente a los videojuegos
+Este es un repositorio en donde estare creando y desarrollando una pagina web referente a los videojuegos
