@@ -100,10 +100,10 @@ main {
 }
 
 .game-title {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
 }
+
 
 .game-title h2 {
     margin: 10px 0 0;
@@ -121,4 +121,267 @@ main {
     font-size: 0.9rem;
     color: #ccc;
 }
+
+.game-page {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+.game-hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.game-hero img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.section-divider {
+    margin: 30px 0;
+    border: none;
+    height: 10px;              /* más ancha */
+    background-color: #555;   /* gris */
+    border-radius: 2px;
+}
+
+.about-game {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.about-game img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.game-meta {
+    margin-top: 20px;
+    color: #bbb;
+}
+
+.game-meta p {
+    margin: 6px 0;
+}
+
+
+.requirements-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1c1c1c;
+}
+
+.requirements-table caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.requirements-table th,
+.requirements-table td {
+    border: 1px solid #555;
+    padding: 12px;
+}
+
+.requirements-table th {
+    background-color: #2e2e2e;
+}
+
+.requirements-table tr:nth-child(even) {
+    background-color: #1c1c1c;
+}
+
+.requirements-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.requirements-table:first-child caption {
+    color: #ccc;
+}
+
+.requirements-table:last-child caption {
+    color: #9acd32; /* verde suave */
+}
+
+.requirements-table:first-child {
+    border-top: 4px solid #777;
+}
+
+.requirements-table:last-child {
+    border-top: 4px solid #4caf50;
+}
+
+.store-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background-color: #1c1c1c;
+    border: 1px solid #444;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.store-card .price {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.store-card.best-price {
+    border-color: #4caf50;
+}
+
+.store-card .badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #4caf50;
+    color: #000;
+    font-size: 0.75rem;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+.price-note {
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: #888;
+    opacity: 0.8;
+}
+.opinion-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.rating {
+    font-size: 2rem;
+    color: gold;
+}
+
+.rating span {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+
+.opinion-text {
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.recommendations {
+    display: flex;
+    gap: 20px;        /* antes 40px */
+    max-width: 700px; /* evita que se estire demasiado */
+}
+
+
+.recommendations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recommendations li {
+    margin: 6px 0;
+}
+
+.recommendations h3 {
+    margin-bottom: 10px;
+}
+
+.recommendations div:first-child h3 {
+    color: #8bc34a; /* verde suave */
+}
+
+.recommendations div:last-child h3 {
+    color: #e57373; /* rojo suave */
+}
+
+
+.recommendations div:first-child li {
+    color: #c5e1a5;
+}
+
+.recommendations div:last-child li {
+    color: #ef9a9a;
+}
+
+
+.recommendations div:first-child li,
+.recommendations div:last-child li {
+    opacity: 0.9;
+}
+
+.comments {
+    max-width: 800px;
+}
+
+.comment-form {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #1c1c1c;
+    border: 1px solid #444;
+    border-radius: 6px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    height: 80px;
+    background-color: #2b2b2b;
+    border: 1px solid #555;
+    color: #fff;
+    padding: 10px;
+    resize: none;
+}
+
+.comment-form button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #555;
+    border: none;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.comment {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 6px;
+}
+
+.comment-user {
+    font-weight: bold;
+    color: #ddd;
+}
+
+
 

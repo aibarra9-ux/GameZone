@@ -1,0 +1,134 @@
+/* ====== BASE ====== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* ====== HERO ====== */
+.hero {
+    padding: 60px 40px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.hero-contenido {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-izquierda,
+.hero-derecha {
+    display: flex;
+    align-items: center;
+}
+
+.hero-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra horizontalmente */
+    text-align: center;
+}
+
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.hero-texto h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.hero-texto p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+.login-btn {
+    background-color: #2ecc71;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.login-btn:hover {
+    background-color: #27ae60;
+}
+
+/* ====== MAIN ====== */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+
+/* ====== GAME CARD ====== */
+.game-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.game-card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s ease;
+}
+
+.game-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover img {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow:
+        0 0 15px rgba(255, 255, 255, 0.6),
+        0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.game-title {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* espacio entre nombre y estrella */
+}
+
+
+.game-title h2 {
+    margin: 10px 0 0;
+    font-size: 1.1rem;
+}
+
+.rating {
+    color: #f1c40f;
+    font-size: 0.95rem;
+}
+
+.game-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
