@@ -13,30 +13,30 @@
 
     <!-- HEADER DEL JUEGO -->
     <section class="game-hero">
-        <h1 class="game-title">TITULO JUEGO</h1>
-        <img src="../assets/imagenes/imagen_molde.jpg" alt="Imagen del juego">
+        <h1 id="game-title" class="game-title">TITULO JUEGO</h1>
+        <img id="game-hero-img" src="../assets/imagenes/imagen_molde.jpg" alt="Imagen del juego">
     </section>
+
 
     <hr class="section-divider">
     <!-- SOBRE EL JUEGO -->
-   <section class="game-section about-game">
-    <img src="../assets/imagenes/imagen_molde2.jpg" alt="Imagen del juego">
+  <section class="game-section about-game">
+        <img id="about-game-img" src="../assets/imagenes/imagen_molde2.jpg" alt="Imagen del juego">
 
-    <div class="about-text">
-        <h2>Sobre el juego</h2>
-        <p>
-            Texto descriptivo del juego. Aquí se explicará de qué trata, su jugabilidad,
-            ambientación, género y principales características.
-        </p>
+        <div class="about-text">
+            <h2>Sobre el juego</h2>
+            <p id="game-description">
+                Texto descriptivo del juego. Aquí se explicará de qué trata, su jugabilidad,
+                ambientación, género y principales características.
+            </p>
 
-        <div class="game-meta">
-        <p>📅<strong>Fecha de lanzamiento:</strong> 18 de noviembre de 2011</p>
-        <p>🛠️<strong>Desarrollador:</strong> Mojang Studios</p>
-        <p>🏢<strong>Editor:</strong> Mojang Studios</p>
+            <div class="game-meta">
+                <p id="game-release">📅<strong>Fecha de lanzamiento:</strong> </p>
+                <p id="game-dev">🛠️<strong>Desarrollador:</strong> </p>
+                <p id="game-publisher">🏢<strong>Editor:</strong> </p>
+            </div>
         </div>
-
-    </div>
-</section>
+    </section>
 
 
     <hr class="section-divider">
@@ -56,23 +56,23 @@
             </tr>
             <tr>
                 <td>SO</td>
-                <td>Windows 10 (64-bit)</td>
+                <td id="min-so">Windows 10 (64-bit)</td>
             </tr>
             <tr>
                 <td>Procesador</td>
-                <td>Intel Core i3</td>
+                <td id="min-cpu">Intel Core i3</td>
             </tr>
             <tr>
                 <td>Memoria</td>
-                <td>8 GB RAM</td>
+                <td id="min-ram">8 GB RAM</td>
             </tr>
             <tr>
                 <td>Gráficos</td>
-                <td>GTX 960</td>
+                <td id="min-gpu">GTX 960</td>
             </tr>
             <tr>
                 <td>Almacenamiento</td>
-                <td>20 GB</td>
+                <td id="min-storage">20 GB</td>
             </tr>
         </table>
 
@@ -85,23 +85,23 @@
             </tr>
             <tr>
                 <td>SO</td>
-                <td>Windows 11 (64-bit)</td>
+                <td id="rec-so">Windows 11 (64-bit)</td>
             </tr>
             <tr>
                 <td>Procesador</td>
-                <td>Intel Core i5</td>
+                <td id="rec-cpu">Intel Core i5</td>
             </tr>
             <tr>
                 <td>Memoria</td>
-                <td>16 GB RAM</td>
+                <td id="rec-ram">16 GB RAM</td>
             </tr>
             <tr>
                 <td>Gráficos</td>
-                <td>RTX 2060</td>
+                <td id="rec-gpu">RTX 2060</td>
             </tr>
             <tr>
                 <td>Almacenamiento</td>
-                <td>20 GB SSD</td>
+                <td id="rec-storage">20 GB SSD</td>
             </tr>
         </table>
 
@@ -116,7 +116,7 @@
     <section class="game-section">
     <h2>Dónde comprar</h2>
 
-    <div class="store-list">
+    <div id= "store-list" class="store-list">
 
         <a href="#" class="store-card best-price">
             <img src="../assets/iconos/stores/logo_steam.jpg" alt="Steam">
@@ -153,12 +153,12 @@
    <section class="game-section opinion">
     <div class="opinion-header">
         <h2>Opinión general</h2>
-        <div class="rating">
+        <div id = "game-rating" class="rating">
             ★★★★☆ <span>4.5 / 5</span>
         </div>
     </div>
 
-    <p class="opinion-text">
+    <p id = "opinion-text" class="opinion-text">
         Texto resumen del juego, destacando sus puntos fuertes y el tipo de experiencia
         que ofrece al jugador.
     </p>
@@ -166,7 +166,7 @@
     <div class="recommendations">
         <div>
             <h3>Recomendado para</h3>
-            <ul>
+            <ul id="recommended-list">
                 <li>✔ Jugadores creativos</li>
                 <li>✔ Jugar con amigos</li>
                 <li>✔ Todas las edades</li>
@@ -175,7 +175,7 @@
 
         <div>
             <h3>No recomendado si</h3>
-            <ul>
+            <ul id="not-recommended-list">
                 <li>✖ Buscas acción constante</li>
                 <li>✖ Quieres gráficos realistas</li>
                 <li>✖ Prefieres historias guiadas</li>
